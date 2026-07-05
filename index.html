@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Dietitian in Kasaragod, Kerala | Personalized Plans - NutritionFacts.in</title>
+    <meta name="description" content="Transform your health with personalized clinical nutrition frameworks in Kasaragod, Kerala. Balanced diets built for authentic Malayali lifestyles.">
+    <meta name="keywords" content="Dietitian in Kasaragod, Nutritionist in Kerala, NutritionFacts.in, Weight loss Kasaragod, Personalized diet plan Kerala">
+    
+    <!-- Animate.css for lightweight entry transitions -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+    <style>
+        /* --- Global Reset & Logo Theme Colors --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        :root {
+            --primary-green: #2a593e; 
+            --primary-hover: #1f422e;
+            --bg-sage: #e9efe0;       
+            --bg-light: #f7f9f5;
+            --mint-whisper: #e6f2ec; 
+            --text-dark: #223127;
+            --text-muted: #55635a;
+            --white: #c6e5be;
+            --orange-tag: #e3300d;
+            
+            /* Box Color Themes */
+            --emerald-green: #039533;
+            --dark-evergreen: #0e4424;
+            --royal-amethyst: #003c0f;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        /* --- Scroll Animation Setup --- */
+        .reveal-section {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+
+        .reveal-section.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* --- Header Navigation --- */
+        header {
+            background-color: rgba(224, 225, 239, 0.9);
+            backdrop-filter: blur(10px);
+            padding: 15px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: bold;
+            font-size: 20px;
+            color: var(--primary-green);
+        }
+
+        /* Dedicated dynamic slot for image logo */
+        .logo-img {
+            height: 45px;
+            width: auto;
+            object-fit: contain;
+            border-radius: 6px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-dark);
+            margin: 0 15px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--primary-green);
+        }
+
+        .btn-header {
+            background-color: var(--primary-green);
+            color: var(--white);
+            padding: 10px 22px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .btn-header:hover {
+            background-color: var(--primary-hover);
+            transform: scale(1.03);
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            background: linear-gradient(180deg, var(--bg-sage) 0%, var(--bg-light) 100%);
+            padding: 80px 8% 100px 8%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+        }
+
+        .hero-content {
+            max-width: 55%;
+        }
+
+        .experience-badge {
+            display: inline-block;
+            background: rgba(42, 89, 62, 0.1);
+            color: var(--primary-green);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            letter-spacing: 0.5px;
+        }
+
+        .hero-name {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--orange-tag);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+        }
+
+        .hero-content h1 {
+            font-size: 44px;
+            color: var(--primary-green);
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: var(--text-muted);
+        }
+
+        .hero-image {
+            max-width: 40%;
+        }
+
+        .hero-image img {
+            width: 100%;
+            border-radius: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+        }
+
+        /* --- Metrics Block --- */
+        .metrics-quote-container {
+            padding: 60px 8%;
+            background: var(--white);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+
+        .stats-box {
+            display: flex;
+            gap: 50px;
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .counter-card {
+            text-align: center;
+        }
+
+        .counter-number {
+            font-size: 52px;
+            font-weight: bold;
+            color: var(--primary-green);
+            font-family: Georgia, serif;
+        }
+
+        .counter-label {
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            margin-top: 5px;
+            font-weight: 600;
+        }
+
+        .quote-card {
+            flex: 1.5;
+            min-width: 320px;
+            background: var(--bg-sage);
+            padding: 35px;
+            border-radius: 16px;
+            border-left: 6px solid var(--primary-green);
+        }
+
+        .quote-card p {
+            font-style: italic;
+            font-size: 19px;
+            color: #1e2c22;
+            font-family: Georgia, serif;
+            line-height: 1.5;
+        }
+
+        /* --- Philosophy Section --- */
+        .story-section {
+            padding: 80px 8%;
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            background-color: var(--bg-light);
+        }
+
+        .story-text {
+            flex: 1;
+        }
+
+        .story-text span {
+            text-transform: uppercase;
+            font-weight: bold;
+            color: var(--orange-tag);
+            letter-spacing: 2px;
+        }
+
+        .story-text h2 {
+            font-size: 36px;
+            margin: 10px 0 20px 0;
+            color: var(--primary-green);
+        }
+
+        .story-text p {
+            margin-bottom: 25px;
+            color: var(--text-muted);
+        }
+
+        .story-image {
+            flex: 1;
+        }
+
+        .story-image img {
+            width: 100%;
+            border-radius: 20px;
+            object-fit: cover;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+
+        /* --- Interactive Pricing Grid (Mint Whisper Background) --- */
+        .pricing-section {
+            padding: 90px 8%;
+            background-color: var(--mint-whisper);
+            text-align: center;
+        }
+
+        .pricing-section h2 {
+            font-size: 38px;
+            color: var(--primary-green);
+            margin-bottom: 10px;
+        }
+
+        .pricing-section .subtitle {
+            color: var(--text-muted);
+            margin-bottom: 50px;
+            font-size: 18px;
+        }
+
+        .pricing-grid {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            gap: 30px;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .price-card {
+            border-radius: 24px;
+            padding: 45px 35px;
+            width: 360px;
+            text-align: left;
+            color: var(--white);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .price-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .price-card.emerald { background-color: var(--emerald-green); }
+        .price-card.evergreen { background-color: var(--dark-evergreen); }
+        .price-card.amethyst { background-color: var(--royal-amethyst); }
+
+        .popular-tag {
+            position: absolute;
+            top: -15px;
+            left: 35px;
+            background-color: var(--orange-tag);
+            color: var(--white);
+            padding: 4px 15px;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 8px;
+            letter-spacing: 0.5px;
+        }
+
+        .price-card h3 {
+            font-size: 28px;
+            font-family: Georgia, serif;
+            margin-bottom: 15px;
+        }
+
+        .price-card .desc {
+            font-size: 15px;
+            margin-bottom: 25px;
+            color: rgba(255, 255, 255, 0.85);
+            line-height: 1.4;
+        }
+
+        .price-amount {
+            font-size: 48px;
+            font-family: Georgia, serif;
+            font-weight: bold;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: baseline;
+        }
+
+        .price-amount span {
+            font-size: 14px;
+            font-family: inherit;
+            font-weight: normal;
+            margin-left: 8px;
+            color: rgba(255, 255, 255, 0.75);
+        }
+
+        .features-list {
+            list-style: none;
+            margin-bottom: 35px;
+            flex-grow: 1;
+        }
+
+        .features-list li {
+            margin-bottom: 12px;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .features-list li::before {
+            content: '✓';
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 18px;
+            height: 18px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            font-size: 11px;
+            flex-shrink: 0;
+        }
+
+        .btn-plan {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            padding: 14px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 15px;
+            transition: background 0.3s;
+            background-color: var(--white);
+            color: var(--text-dark);
+            text-align: center;
+        }
+
+        .price-card.emerald .btn-plan { color: var(--emerald-green); }
+        .price-card.evergreen .btn-plan { color: var(--dark-evergreen); }
+        .price-card.amethyst .btn-plan { color: var(--royal-amethyst); }
+
+        .btn-plan:hover { background-color: #f0fdf4; }
+
+        /* --- Local Review Architecture --- */
+        .reviews-section {
+            padding: 90px 8%;
+            background-color: var(--white);
+            text-align: center;
+        }
+
+        .reviews-section h2 {
+            font-size: 36px;
+            color: var(--primary-green);
+            margin-bottom: 40px;
+        }
+
+        .reviews-grid {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .review-card {
+            background: var(--bg-light);
+            border: 1px solid rgba(0,0,0,0.05);
+            padding: 35px;
+            border-radius: 20px;
+            width: 360px;
+            text-align: left;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.02);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .stars {
+            color: #ffb100;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        .review-card p {
+            font-style: italic;
+            color: var(--text-muted);
+            font-size: 15px;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .client-info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border-top: 1px solid rgba(0,0,0,0.06);
+            padding-top: 15px;
+        }
+
+        .client-meta h4 {
+            font-size: 16px;
+            color: var(--text-dark);
+        }
+
+        .client-meta p {
+            font-size: 13px;
+            color: var(--primary-green);
+            margin-bottom: 0;
+            font-style: normal;
+        }
+
+        /* --- Footer Contexts --- */
+        footer {
+            background-color: var(--primary-green);
+            color: var(--white);
+            text-align: center;
+            padding: 40px 8%;
+            font-size: 14px;
+        }
+
+        .footer-contacts {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .footer-contacts a {
+            color: var(--bg-sage);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .footer-contacts a:hover {
+            color: var(--white);
+            text-decoration: underline;
+        }
+
+        /* --- Strict Media Viewport Responsiveness --- */
+        @media (max-width: 992px) {
+            .pricing-grid, .reviews-grid { flex-direction: column; align-items: center; }
+            .price-card, .review-card { width: 100%; max-width: 440px; }
+            .hero { flex-direction: column; text-align: center; padding-top: 40px; }
+            .hero-content, .hero-image { max-width: 100%; }
+            .metrics-quote-container { flex-direction: column; text-align: center; }
+            .stats-box { justify-content: center; }
+            .story-section { flex-direction: column; text-align: center; }
+        }
+
+        @media (max-width: 480px) {
+            header { padding: 15px 4%; }
+            .hero-content h1 { font-size: 32px; }
+            .price-card { padding: 30px 20px; }
+            .stats-box { gap: 25px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Area -->
+    <header>
+        <div class="logo-container">
+            <!-- Dedicated Dynamic Image Anchor Link for Logo Asset File -->
+            <img src="logod.jpg.jpg" alt="NutritionFacts.in Logo" class="logo-img">
+            <span>NutritionFacts.in</span>
+        </div>
+        <nav>
+            <a href="#">About</a>
+            <a href="#story">Our Philosophy</a>
+            <a href="#plans">Programs</a>
+            <a href="#reviews">Success Stories</a>
+        </nav>
+        <a href="https://wa.me/911234567890?text=Hello!%20I%20am%20visiting%20NutritionFacts.in%20and%20want%20to%20book%20a%20consultation%20session." target="_blank" class="btn-header">Book Consultation →</a>
+    </header>
+
+    <!-- Animated Hero Section (SEO Tuned) -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="animate__animated animate__fadeInDown">
+                <p class="hero-name">Dt. Mariyam Zaheema S H</p>
+                <div class="experience-badge">Msc in nutrition with 4+ Years Experience in Clinical Nutrition</div>
+            </div>
+            <h1 class="animate__animated animate__fadeInLeft">Top-Tier Dietitian & Nutritionist Services in Kasaragod, Kerala</h1>
+            <p class="animate__animated animate__fadeInUp">Transform your lifestyle using regional Kerala diet structures. We build customized medical and wellness frameworks tailored specifically to your daily choices, body parameters, and routines.</p>
+            <a href="#plans" class="btn-header animate__animated animate__zoomIn" style="padding: 14px 35px;">Explore Your Programs</a>
+        </div>
+        <div class="hero-image animate__animated animate__fadeInRight">
+            <img src="https://images.unsplash.com/photo-1543362906-acfc16c67564?auto=format&fit=crop&w=600&q=80" alt="Clinical Nutritionist in Kerala">
+        </div>
+    </section>
+
+    <!-- Metrics & Reveal Dynamic Block -->
+    <section class="metrics-quote-container reveal-section">
+        <div class="stats-box">
+            <div class="counter-card">
+                <div class="counter-number" data-target="600">0</div>
+                <div class="counter-label">Successful Cases</div>
+            </div>
+            <div class="counter-card">
+                <div class="counter-number" data-target="96.5">0</div>
+                <div class="counter-label">% Recovery & Success</div>
+            </div>
+        </div>
+        <div class="quote-card">
+            <p>"Authentic health inside Kerala shouldn't require giving up local staple ingredients. It requires structuring macros cleanly around your life metrics."</p>
+        </div>
+    </section>
+
+    <!-- Context Philosophy Section -->
+    <section class="story-section reveal-section" id="story">
+        <div class="story-text">
+            <span>Regional Wellness Mapping</span>
+            <h2>Scientific Nutrition Built for Kerala Lifestyles</h2>
+            <p>At NutritionFacts.in, we dismantle restrictive western crash schedules. Our programs look closely into localized habits across Kasaragod, constructing realistic caloric parameters, stabilizing blood metrics, and maintaining high daily vitality using standard kitchen meals.</p>
+            <a href="https://dietitianfacts.lovable.app" target="_blank" class="btn-header">Learn Our Approach</a>
+        </div>
+        <div class="story-image">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=500&q=80" alt="Healthy Kerala Food Strategies">
+        </div>
+    </section>
+
+    <!-- Program Selection Grid Section (Mint Whisper Theme) -->
+    <section class="pricing-section reveal-section" id="plans">
+        <h2>Customized Diet Plans & Pricing</h2>
+        <p class="subtitle">Select a practical diagnostic structure mapped by premium wellness tracking.</p>
+        
+        <div class="pricing-grid">
+            
+            <!-- Plan 1 -->
+            <div class="price-card emerald">
+                <div>
+                    <h3>Basic Assessment</h3>
+                    <p class="desc">Initial evaluation, diagnostic consultation, and introductory target program sheets.</p>
+                    <div class="price-amount">₹750 <span>One-time</span></div>
+                    <ul class="features-list">
+                        <li>1:1 Virtual or Offline consult</li>
+                        <li>Local ingredient macro sheet</li>
+                        <li>Basic lifestyle review</li>
+                    </ul>
+                </div>
+                <a href="https://wa.me/911234567890?text=I%20want%20to%20register%20for%20the%20Basic%20Plan%20at%20NutritionFacts.in" target="_blank" class="btn-plan">Select Basic Plan →</a>
+            </div>
+
+            <!-- Plan 2 -->
+            <div class="price-card evergreen">
+                <div class="popular-tag">Recommended</div>
+                <div>
+                    <h3>1-Month Deep Track</h3>
+                    <p class="desc">Continuous daily WhatsApp modifications, customized tracking patterns, and bi-weekly monitoring.</p>
+                    <div class="price-amount">₹1,750 <span>Per Month</span></div>
+                    <ul class="features-list">
+                        <li>Daily WhatsApp chat adjustments</li>
+                        <li>Custom dietary metrics profile</li>
+                        <li>Weekly metabolic progress monitoring</li>
+                        <li>Direct therapeutic accountability</li>
+                    </ul>
+                </div>
+                <a href="https://wa.me/911234567890?text=I%20want%20to%20start%20the%201-Month%20Program%20with%20NutritionFacts.in" target="_blank" class="btn-plan">Select 1-Month Plan →</a>
+            </div>
+
+            <!-- Plan 3 -->
+            <div class="price-card amethyst">
+                <div>
+                    <h3>2-Month Transformation</h3>
+                    <p class="desc">Extended structural blueprint for metabolic corrections, habit development, and sustainable longevity paths.</p>
+                    <div class="price-amount">₹3,250 <span>2 Months</span></div>
+                    <ul class="features-list">
+                        <li>Comprehensive 1-Month support features</li>
+                        <li>Fortnightly systematic diagnostic checkups</li>
+                        <li>Adaptive restaurant and travel menu swaps</li>
+                        <li>Long-term habit preservation blueprint</li>
+                    </ul>
+                </div>
+                <a href="https://wa.me/911234567890?text=I%20want%20to%20enroll%20in%20the%202-Month%20Program%20at%20NutritionFacts.in" target="_blank" class="btn-plan">Select 2-Month Plan →</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Client Review Grid Segment (Demographic Parameters Explicit) -->
+    <section class="reviews-section reveal-section" id="reviews">
+        <h2>Success Stories from Across Kerala</h2>
+        <div class="reviews-grid">
+            
+            <div class="review-card">
+                <div>
+                    <div class="stars">★★★★★</div>
+                    <p>"The localized changes helped me manage my sugar levels easily without skipping brown rice entirely. Outstanding tracking routine over WhatsApp!"</p>
+                </div>
+                <div class="client-info">
+                    <div class="client-meta">
+                        <h4>Maryam K</h4>
+                        <p>Kasaragod</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div>
+                    <div class="stars">★★★★★</div>
+                    <p>"maryams daily follow up made all the diffrence.i never felt alone in the process.she always there for me"</p>
+                </div>
+                <div class="client-info">
+                    <div class="client-meta">
+                        <h4>Aysha</h4>
+                        <p>kerala</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div>
+                    <div class="stars">★★★★★</div>
+                    <p>"Highly professional clinical counsel. The weight targets were met through structured home meals rather than expensive supplements."</p>
+                </div>
+                <div class="client-info">
+                    <div class="client-meta">
+                        <h4>Jaseela</h4>
+                        <p> kasaragod</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer Segment featuring Direct Email Interactivity -->
+    <footer>
+        <div class="footer-contacts">
+            <a href="https://wa.me/911234567890" target="_blank">💬 Official WhatsApp Business Helpline</a>
+        </div>
+        <p>&copy; 2026 NutritionFacts.in. All Rights Reserved. Specialized Clinical Nutrition & Wellness Practice, Kerala, India.</p>
+    </footer>
+
+    <!-- Intersection Observers for Scroll Reveal and Number Counters -->
+    <script>
+        const revealSections = () => {
+            const sections = document.querySelectorAll('.reveal-section');
+            sections.forEach(section => {
+                const windowHeight = window.innerHeight;
+                const elementTop = section.getBoundingClientRect().top;
+                const elementVisible = 100;
+                
+                if (elementTop < windowHeight - elementVisible) {
+                    section.classList.add('active');
+                    if(section.classList.contains('metrics-quote-container')) {
+                        startCounters(section);
+                    }
+                }
+            });
+        };
+
+        let countersStarted = false;
+        const startCounters = (parentSection) => {
+            if(countersStarted) return;
+            countersStarted = true;
+            
+            const counters = parentSection.querySelectorAll('.counter-number');
+            counters.forEach(counter => {
+                counter.innerText = '0';
+                const updateCounter = () => {
+                    const target = +counter.getAttribute('data-target');
+                    const c = parseInt(counter.innerText);
+                    const increment = target / 70;
+                    
+                    if(c < target) {
+                        counter.innerText = `${Math.ceil(c + increment)}`;
+                        setTimeout(updateCounter, 20);
+                    } else {
+                        counter.innerText = target + (target === 98 ? '%' : '+');
+                    }
+                };
+                updateCounter();
+            });
+        };
+
+        window.addEventListener('scroll', revealSections);
+        revealSections(); // Trigger logic check on component mount initialization
+    </script>
+</body>
+</html>
